@@ -1,6 +1,5 @@
-
-import { Mastra } from '@mastra/core/mastra';
-import { createLogger } from '@mastra/core/logger';
+import { Mastra } from "@mastra/core/mastra";
+import { createLogger } from "@mastra/core/logger";
 import { cursorRulesAgent } from "./agents";
 
 /*
@@ -18,7 +17,7 @@ export const mastra = new Mastra({
     cursorRulesAgent,
   },
   logger: createLogger({
-      name: "GitHub Cursor Rules Agent",
-      level: "info",
+    name: "GitHub Cursor Rules Agent",
+    level: "info",
   }),
 });

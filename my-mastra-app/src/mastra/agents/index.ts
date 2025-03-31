@@ -1,11 +1,11 @@
-import { google } from '@ai-sdk/google';
-import { Agent } from '@mastra/core/agent';
-import { weatherTool } from '../tools';
-import { openRouter } from '../models';
+import { google } from "@ai-sdk/google";
+import { Agent } from "@mastra/core/agent";
+import { weatherTool } from "../tools";
+import { openRouter } from "../models";
 
-// 天気を取得するエージェント 
+// 天気を取得するエージェント
 export const weatherAgent = new Agent({
-  name: 'Weather Agent',
+  name: "Weather Agent",
   instructions: `
       You are a helpful weather assistant that provides accurate weather information.
 
@@ -26,7 +26,7 @@ export const weatherAgent = new Agent({
  * Claude 3.7 Thinking モデルを使用するエージェント
  */
 export const claudeAgent = new Agent({
-  name: 'Weather Agent',
+  name: "Weather Agent",
   instructions: `
       You are a helpful weather assistant that provides accurate weather information.
 
