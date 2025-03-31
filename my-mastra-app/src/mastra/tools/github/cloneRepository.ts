@@ -8,7 +8,7 @@ import fs from "fs";
 const execAsync = promisify(exec);
 
 /**
- * クローン操作の結果を表すスキーマ
+ * クローン操作の結果を表す出力スキーマ
  */
 export const cloneOutputSchema = z
   .object({
@@ -28,6 +28,7 @@ export const cloneOutputSchema = z
 /**
  * GitHub リポジトリをクローンするツール
  * LFS対応とサブモジュール処理も可能
+ * ツールの作成と入力スキーマの定義
  */
 export const cloneRepositoryTool = createTool({
   id: "clone-repository",
