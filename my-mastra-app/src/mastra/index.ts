@@ -1,20 +1,14 @@
 import { Mastra } from "@mastra/core/mastra";
 import { createLogger } from "@mastra/core/logger";
-import { cursorRulesAgent } from "./agents";
-
-/*
-export const mastra = new Mastra({
-  agents: { weatherAgent },
-  logger: createLogger({
-    name: 'Mastra',
-    level: 'info',
-  }),
-});
-*/
+import { cheatsheetAgent } from "./agents";
+import { cursorRulesWorkflow } from "./workflows";
 
 export const mastra = new Mastra({
   agents: {
-    cursorRulesAgent,
+    cheatsheetAgent
+  },
+  workflows: {
+    cursorRulesWorkflow,
   },
   logger: createLogger({
     name: "GitHub Cursor Rules Agent",

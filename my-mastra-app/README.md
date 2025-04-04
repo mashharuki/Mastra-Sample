@@ -24,5 +24,6 @@ INFO [2025-03-24 22:31:32.864 +0900] (Mastra): 🦄 Mastra API running on port 4
 INFO [2025-03-24 22:31:32.868 +0900] (Mastra): 📚 Open API documentation available at http://localhost:4111/openapi.json
 INFO [2025-03-24 22:31:32.868 +0900] (Mastra): 🧪 Swagger UI available at http://localhost:4111/swagger-ui
 INFO [2025-03-24 22:31:32.868 +0900] (Mastra): 👨‍💻 Playground available at http://localhost:4111/
-
 ```
+
+[http://localhost:4111/](http://localhost:4111/) にアクセスする
